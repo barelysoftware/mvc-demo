@@ -1,0 +1,20 @@
+﻿body {
+}
+
+.tile .fa {
+    margin-top: 30px;
+}
+
+.test-block {
+    width: 50%;
+    height: 50%;
+    padding: 25% 25%;
+}
+
+.yellow {
+    background-color: #f93;
+}
+
+.blue {
+    background-color: #339;
+}

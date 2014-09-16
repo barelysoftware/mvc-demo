@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+@model Mvc.Models.PageViewModel<Mvc.Models.HomeModel>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <h2>Test</h2>
+
+            <div class="thumbnail tile tile-medium">
+                <a href="/home/getblue" class="fa-links"><i class="fa fa-bolt clearfix fa-4x"></i>
+                    <h5>Blue</h5>
+                </a>
+            </div>
+            <div class="thumbnail tile tile-medium tile-orange">
+                <a href="/home/getyellow" class="fa-links"><i class="fa fa-cube clearfix fa-4x"></i>
+                    <h5>Yellow</h5>
+                </a>
+            </div>
+            <div class="thumbnail tile tile-wide tile-red clearfix">
+                <a href="/" class="fa-links"><i class="fa fa-paw clearfix fa-4x"></i>
+                    <h5>Reset</h5>
+                </a>
+            </div>
+            @*<div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="getblue">Blue</a></li>
+                    <li><a href="getyellow">Yellow</a></li>
+                    <li class="divider"></li>
+                    <li><a href="reset">Reset</a></li>
+                </ul>
+            </div>*@
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            @Html.Action("SetColor", Model)
+        </div>
+    </div>
+</div>
+
+
