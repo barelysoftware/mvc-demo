@@ -10,11 +10,8 @@ namespace Mvc.Modules
     {
         public ColorMeBadModule() : base("/nancy")
         {
-            Get["/colormebad/{color}"] = parameters =>
-                {
-                    return string.Concat("<div class=\"test-block ", parameters.color,
-                    " clearfix\">&nbsp;</div>");
-                };
+            Get["/colormebad/{color}"] = parameters => string.Concat("<div class=\"test-block ", parameters.color,
+                                                                     " clearfix\">&nbsp;</div>");
         }
     }
 }
