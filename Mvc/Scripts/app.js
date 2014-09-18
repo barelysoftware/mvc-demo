@@ -12,17 +12,17 @@ $(document).ready(function () {
 
         console.log(color);
 
-        //$.getJSON("/api/colorme/"+ color,
-        //function (data) {
-        //    var contentData = $.parseJSON(data);
-        //    $content.html(contentData.content);
-        //});
-
-        $.getJSON("/nancy/colormebad/"+color, { },
+        $.getJSON("/api/colorme/"+ color,
         function (data) {
-            var contentData = eval(data);
-        $content.html(contentData.content);
+            var contentData = $.parseJSON(data);
+            $content.html(contentData.content);
         });
+
+        //$.getJSON("/nancy/colormebad/"+color, { },
+        //function (data) {
+        //    var contentData = eval(data);
+        //$content.html(contentData.content);
+        //});
     });
 });
 
