@@ -1,7 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc", "Mvc\Mvc.csproj", "{3BA9F9C6-BFF2-48C2-9AC7-29E55A5D4FD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeb", "Mvc\TestWeb.csproj", "{3BA9F9C6-BFF2-48C2-9AC7-29E55A5D4FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5E28E419-AD43-400C-8533-30A4DB570E3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{75823A1B-13F4-487C-AB4A-3C2B162E9C8A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +20,10 @@ Global
 		{3BA9F9C6-BFF2-48C2-9AC7-29E55A5D4FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA9F9C6-BFF2-48C2-9AC7-29E55A5D4FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA9F9C6-BFF2-48C2-9AC7-29E55A5D4FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E28E419-AD43-400C-8533-30A4DB570E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E28E419-AD43-400C-8533-30A4DB570E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E28E419-AD43-400C-8533-30A4DB570E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E28E419-AD43-400C-8533-30A4DB570E3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

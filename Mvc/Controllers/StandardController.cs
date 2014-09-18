@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Mvc.Controllers
+namespace TestWeb.Controllers
 {
     public class StandardController : Controller
     {

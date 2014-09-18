@@ -1,8 +1,8 @@
 ﻿
 using System.Web.Mvc;
-using Mvc.Models;
+using TestWeb.Models;
 
-namespace Mvc.Controllers
+namespace TestWeb.Controllers
 {
     public class HomeController : ControllerBase<HomeModel>
     {

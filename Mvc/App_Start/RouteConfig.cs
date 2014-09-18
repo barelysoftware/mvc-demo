@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Mvc.App_Start
+namespace TestWeb.App_Start
 {
     public class RouteConfig
     {

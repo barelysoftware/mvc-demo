@@ -1,5 +1,5 @@
 ﻿
-namespace Mvc.Models
+namespace TestWeb.Models
 {
     public class PageBase
     {

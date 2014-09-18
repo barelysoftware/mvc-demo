@@ -1,7 +1,7 @@
 ﻿using Nancy;
 using Newtonsoft.Json;
 
-namespace Mvc.Modules
+namespace TestWeb.Modules
 {
     public class ColorMeBadModule : NancyModule
     {

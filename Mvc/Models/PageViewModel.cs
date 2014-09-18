@@ -1,5 +1,5 @@
 ﻿
-namespace Mvc.Models
+namespace TestWeb.Models
 {
     public class PageViewModel<T> : IPageViewModel<T> where T : PageBase
     {
