@@ -9,10 +9,11 @@ namespace TestWeb.Controllers
         //
         // GET: /Home/
 
+        
         public ActionResult Index()
         {
             var viewModel = CreateModel();
-
+            
             return View(viewModel);
         }
 
@@ -41,7 +42,6 @@ namespace TestWeb.Controllers
         [ChildActionOnly]
         public string SetColor(PageViewModel<HomeModel> model)
         {
-
             return !string.IsNullOrEmpty(model.CurrentModel.Color) ?  string.Concat("<div class=\"test-block ", model.CurrentModel.Color," clearfix\">&nbsp;</div>") : "";
         }
 
