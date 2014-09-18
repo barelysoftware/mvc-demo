@@ -1,13 +1,14 @@
 ﻿
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace Mvc.Controllers.Api
 {
     public class ColorMeController : ApiController
     {
-        public string Get([FromUri]string color)
+        public string Get(string id)
         {
-            return string.Concat("<div class=\"test-block ", color," clearfix\">&nbsp;</div>");
+            return JsonConvert.SerializeObject(new { content = string.Concat("<div class=\"test-block ", id," clearfix\">&nbsp;</div>")});
         }
     }
 }

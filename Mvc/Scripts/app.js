@@ -1,6 +1,6 @@
 ﻿//(function () {
-$(document).ready(function() {
-    $(".tile > a").click('click', function(evt) {
+$(document).ready(function () {
+    $(".tile > a").click('click', function (evt) {
         evt.preventDefault();
         var $content = $("#content");
 
@@ -12,8 +12,16 @@ $(document).ready(function() {
 
         console.log(color);
 
-        $.getJSON("/api/colorme/", { 'color': color },function(data) {
-            $content.html(data);
+        //$.getJSON("/api/colorme/"+ color,
+        //function (data) {
+        //    var contentData = $.parseJSON(data);
+        //    $content.html(contentData.content);
+        //});
+
+        $.getJSON("/nancy/colormebad/"+color, { },
+        function (data) {
+            var contentData = eval(data);
+        $content.html(contentData.content);
         });
     });
 });
